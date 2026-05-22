@@ -3,7 +3,7 @@ import axios from "axios";
 import { useParams, Link } from "react-router-dom";
 import "./PublicProfilePage.css";
 
-const API_URL = "http://localhost:3000";
+const API_URL = import.meta.env.VITE_API_URL;
 
 function PublicProfilePage() {
   const { id } = useParams();

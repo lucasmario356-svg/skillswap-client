@@ -10,7 +10,7 @@ function SkillsListPage() {
   const [maxPrice, setMaxPrice] = useState("");
   const [page, setPage] = useState(1);
 
-  const API_URL = "http://localhost:3000";
+  const API_URL = import.meta.env.VITE_API_URL;
 
   useEffect(() => {
     let url = `${API_URL}/api/skills?page=${page}&limit=6`;
