@@ -1,0 +1,90 @@
+.EditProfilePage {
+  padding: 50px 8%;
+  background: #121212;
+  min-height: 100vh;
+  color: white;
+}
+
+.EditProfilePage h2 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  border-left: 4px solid #ff8a00;
+  padding-left: 15px;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 450px;
+  margin: 0 auto;
+  background: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 16px;
+  padding: 35px;
+}
+
+.edit-form label {
+  display: block;
+  color: #888;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 7px;
+}
+
+.edit-form input[type="text"],
+.edit-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  background: #252525;
+  border: 1px solid #444;
+  border-radius: 8px;
+  color: white;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+.edit-form input[type="text"]:focus,
+.edit-form textarea:focus {
+  border-color: #ff8a00;
+}
+
+.edit-form input[type="file"] {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.edit-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.edit-avatar-preview {
+  text-align: center;
+}
+
+.edit-avatar-preview img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ff8a00;
+}
+
+.btn-guardar {
+  padding: 12px;
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.btn-guardar:hover  { opacity: 0.85; }
+.btn-guardar:disabled { opacity: 0.5; cursor: not-allowed; }

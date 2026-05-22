@@ -1,0 +1,74 @@
+.PublicProfilePage {
+  padding: 50px 8%;
+  background: #121212;
+  min-height: 100vh;
+  color: white;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.pp-card {
+  background: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.pp-avatar {
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(45deg, #ff8a00, #e52e71);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.pp-avatar img { width: 100%; height: 100%; object-fit: cover; }
+
+.pp-info h1 { margin: 0 0 10px; font-size: 2rem; }
+.pp-bio     { color: #bbb; margin-top: 15px; line-height: 1.7; }
+.pp-privado { color: #444; margin-top: 15px; font-style: italic; }
+
+.pp-seccion { margin-top: 10px; }
+.pp-seccion h2 {
+  font-size: 1.4rem;
+  margin-bottom: 22px;
+  border-left: 4px solid #ff8a00;
+  padding-left: 15px;
+}
+
+.pp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 20px;
+}
+
+.pp-vacio { color: #555; font-style: italic; }
+
+.mini-skill-card { background: #1e1e1e; border-radius: 12px; overflow: hidden; border: 1px solid #333; transition: transform 0.2s; }
+.mini-skill-card:hover { transform: translateY(-5px); border-color: #555; }
+.mini-skill-card img { width: 100%; height: 140px; object-fit: cover; }
+.mini-card-info { padding: 14px; }
+.mini-card-info h4 { margin: 0 0 5px; color: white; }
+.mini-card-info .price-text { color: #aaa; font-size: 0.88rem; margin-bottom: 10px; }
+.mini-card-info .view-link  { color: #ff8a00; text-decoration: none; font-size: 0.88rem; font-weight: bold; }
+.mini-card-info .view-link:hover { text-decoration: underline; }
+
+.rol-badge     { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 0.72rem; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+.rol-admin     { background: rgba(255,77,77,0.15);  color: #ff4d4d; border: 1px solid #ff4d4d; }
+.rol-helper    { background: rgba(77,166,255,0.15); color: #4da6ff; border: 1px solid #4da6ff; }
+.rol-professor { background: rgba(255,138,0,0.15);  color: #ff8a00; border: 1px solid #ff8a00; }
+.rol-alumno    { background: rgba(76,175,80,0.15);  color: #4caf50; border: 1px solid #4caf50; }
+.rol-user      { background: rgba(160,160,160,0.1); color: #aaa;    border: 1px solid #555; }
+
+.pp-loading { display: flex; justify-content: center; align-items: center; min-height: 60vh; color: #555; font-size: 1.1rem; }
