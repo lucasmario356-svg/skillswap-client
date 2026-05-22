@@ -66,7 +66,7 @@ function HomePage() {
         <div className="feature-card">
           <div className="feature-icon">📅</div>
           <h3>Reservas Sencillas</h3>
-          <p>Solicita tu clase con un clic. El profesor confirma la fecha y listo — sin complicaciones.</p>
+          <p>Solicita tu clase con un clic. El profesor confirma la fecha y listo sin complicaciones.</p>
         </div>
         <div className="feature-card">
           <div className="feature-icon">⭐</div>
