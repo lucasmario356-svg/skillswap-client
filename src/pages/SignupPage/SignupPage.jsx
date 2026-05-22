@@ -15,7 +15,7 @@ function SignupPage() {
     e.preventDefault();
     const requestBody = { email, password, name };
 
-    axios.post(`${import.meta.env.VITE_API_URL}/auth/signup`, requestBody)
+    axios.post(`${import.meta.env.VITE_API_URL}/api/auth/signup`, requestBody)
       .then(() => {
         navigate("/login");
       })

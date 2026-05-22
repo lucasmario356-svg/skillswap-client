@@ -16,7 +16,7 @@ function LoginPage() {
     e.preventDefault();
     const requestBody = { email, password };
 
-    axios.post(`${import.meta.env.VITE_API_URL}/auth/login`, requestBody)
+    axios.post(`${import.meta.env.VITE_API_URL}/api/auth/login`, requestBody)
       .then((response) => {
         storeToken(response.data.authToken);
         authenticateUser();
